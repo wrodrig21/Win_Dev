@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Query Parameter 
+Query- to search(in programing world)
+Parameter- a value that you can set to refine your search
+?> indicator of query parameters name(key)= tom(value) -->
+
+<!-- Query parameters are a defined set of parameters attached to the end of a url. They are extensions of the URL that are used to help define specific content or actions based on the data being passed.
+
+EXAMPLE:http://example.com/path?name=Branch&products=[Journeys,Email,Universal%20Ads]-->
+
+
+<!-- http://practice.com/examples?name=tom& -->
+
+<!-- 404 Error- user did not specify query parameter
+mandatory parameter -->
+
+
+
+
+<!-- Processing Errors- a server can stop processing as soon a problem occured OR it can continue and return multiple problems -->
+example of processing multiple errors:
+HTTP/1.1 400 Bad Request
+Content-Type: application/vnd.api+json
+
+{
+  "errors": [
+    {
+      "status": "403",
+      "source": { "pointer": "/data/attributes/secretPowers" },
+      "detail": "Editing secret powers is not authorized on Sundays."
+    },
+    {
+      "status": "422",
+      "source": { "pointer": "/data/attributes/volume" },
+      "detail": "Volume does not, in fact, go to 11."
+    },
+    {
+      "status": "500",  ERROR
+      "source": { "pointer": "/data/attributes/reputation" },
+      "title": "The backend responded with an error",
+      "detail": "Reputation service not responding after three requests."
+    }
+  
+
+<!-- Error objects provide additional information about problems encountered while performing an operation. Error objects MUST be returned as an array keyed by errors in the top level of a JSON:API document.  --> 
+    <!-- * every member in an error object is optional.*
+
+An error object MAY have the following members:
+
+
+
+<!My short description takeaways
+
+>Error Objects</h1>
+    <h3>An error object MAY have the following members:</h3>
+    <ul>
+        <li>id: a unique identifier for this particular occurrence of the problem.</li>
+        <li>links: a links object containing the following members:</li>
+        <li>status: the HTTP status code applicable to this problem, expressed as a string value.</li>
+        <li>code: an application-specific error code, expressed as a string value.</li>
+        <li>title: a short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization</li>
+        <li>detail: a human-readable explanation specific to this occurrence of the problem. Like title, this field’s value can be localized.</li>
+        <li>source: an object containing references to the source of the error.</li>
+    </ul>
+
+
+
+
+
+
+
+
+</body>
+</html>

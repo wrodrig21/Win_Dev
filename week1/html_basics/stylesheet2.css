@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+    text-align: center;
+  }
+  #red {
+    text-align: center;
+    color: red;
+    border: darkslategray;
+  }
+  .blue {
+    text-align: center;
+    color: blue;
+  }
+  button:hover {
+    background-color: green;
+  }
+  button:link {
+    background-color: orange;
+
+  }
+  
+  
+  
+  
+  
+  
+  

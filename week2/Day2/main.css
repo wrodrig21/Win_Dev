@@ -1,0 +1,94 @@
+/*=====CSS for Dropdown Menus=====*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0088ce;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.boxes 1{
+    height: 100px;
+    width: 100px;
+    background-color:plum;
+    float:left;
+    margin:10px;
+}
+.boxes 2{
+    height:100px;
+    width:100px;
+    background-color:green;
+    float: left;
+    margin:10px;
+}
+
+
+
+
+
+
+
+
+.font-one{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 30px;
+
+}
+
+
+@media only screen and (max-width: 767px) { /*Make the text green on small devices*/
+    .mytext{
+        color: green;
+    }
+}
+
+@media only screen and (min-width: 768px) { /*Make the text red on large devices*/
+    .mytext{
+        color: red;
+    }
+}
