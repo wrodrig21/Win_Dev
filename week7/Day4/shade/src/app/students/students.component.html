@@ -1,0 +1,10 @@
+<h2>{{Students.name}} Details</h2>
+<div><span>ranking: </span>{{students.ranking}}</div>
+<div><span>age: </span>{{students.age}}</div>
+<div><span>feedback: </span>{{students.feedback}}</div>
+
+<div>
+    <label> Change Feedback:
+        <input [(ngModel)]="Students.feedback" placeholder="feedback" />
+    </label>
+</div>
