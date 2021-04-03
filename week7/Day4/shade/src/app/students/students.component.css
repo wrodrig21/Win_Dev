@@ -1,0 +1,72 @@
+h2 {
+    text-decoration: underline;
+}
+.students {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 30em;
+}
+.students li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+.students li:hover {
+    color: #ff0000;
+    background-color: #DDD;
+    left: .1em;
+}
+.students li.selected {
+    background-color: #CFD8DC;
+    color: red;
+}
+.students li.selected:hover {
+    background-color: #BBD8DC;
+    color: red;
+}
+.students .rank {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#002fff;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.students .name {
+    font-weight: bold;
+}
+
+.textbox {
+    width: 80%;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.profilepicture {
+    width: 150px !important;
+    height: 150px !important;
+    border: 4px black solid;
+    border-radius: 50%;
+}
+
+.text {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
