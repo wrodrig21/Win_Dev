@@ -1,51 +1,26 @@
-// you will always need to import React from react
-// Import {component} when building a class component
-
-import React, { Component } from 'react';
-// Importing our CSS file from src>css
-import Note from './Note';
+import React, {Component} from 'react';
 import '../css/Board.css';
+import Note from './Note';
+import myFirebase from '../utility/MyFirebase';
 
 class Board extends Component {
-    // constructor method  available to us in class components
   constructor() {
     super();
     this.state = {
-      notes: [
-        {
-          title: "Class Notes",
-          body: "Always use constructors when extending another class"
-        },
-        {
-          title: "My New Address",
-          body: "2001 N Lonhill Phoenix, AZ 81234"
-        },
-        {
-          title: "React Notes",
-          body: "Everything in React is a component"
-        }
-      ]
+      notes: []
     }
-    
+    this.firebaseDBRef = myFirebase.getFirebaseRef();
+    this.firebaseDBRef.once('value').then((snapshot) => {
+      console.log(snapshot.val());
+    });
   }
-// Board.js Board Component Class Function
 
-// addNote() {
-//   let notes = this.state.notes;
+// Rest of Board.js
 
-//   notes.push(
-//     {
-//       title: "New Note Title",
-//       body: "New Note body"
-//     }
-//   );
-  
-//   this.setState(
-//     {
-//       notes
-//     }
-//   );
-// }
+
+// you will always need to import React from react
+// Import {component} when building a class component
+
 
 addNote() {
   let notes = this.state.notes;
